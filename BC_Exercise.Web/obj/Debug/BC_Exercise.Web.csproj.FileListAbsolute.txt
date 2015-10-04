@@ -84,3 +84,5 @@ C:\Users\Jason\Documents\Github\BC_Exercise\BC_Exercise.Web\bin\Raven.Abstractio
 C:\Users\Jason\Documents\Github\BC_Exercise\BC_Exercise.Web\bin\Raven.Client.Lightweight.pdb
 C:\Users\Jason\Documents\Github\BC_Exercise\BC_Exercise.Web\bin\Raven.Client.Lightweight.xml
 C:\Users\Jason\Documents\Github\BC_Exercise\BC_Exercise.Web\bin\Raven.Database.pdb
+C:\Users\Jason\Documents\Github\BC_Exercise\BC_Exercise.Web\bin\BC_Exercise.Entities.dll
+C:\Users\Jason\Documents\Github\BC_Exercise\BC_Exercise.Web\bin\BC_Exercise.Entities.pdb
