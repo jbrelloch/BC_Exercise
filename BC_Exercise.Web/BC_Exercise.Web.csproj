@@ -214,6 +214,9 @@
     <Content Include="Scripts\angular\angular.js" />
     <Content Include="Scripts\app\app.js" />
     <Content Include="Scripts\app\home\HomeController.js" />
+    <Content Include="Scripts\app\order\OrderController.js" />
+    <Content Include="Scripts\app\product\ProductController.js" />
+    <Content Include="Scripts\app\user\UserController.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Raven.Studio.Html5.zip">
@@ -247,10 +250,10 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Views\Web.config" />
-    <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\User\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -262,16 +265,12 @@
     <Folder Include="Areas\ProductPage\Views\Shared\" />
     <Folder Include="Areas\UserPage\Models\" />
     <Folder Include="Models\" />
-    <Folder Include="Scripts\app\order\" />
-    <Folder Include="Scripts\app\product\" />
-    <Folder Include="Scripts\app\user\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
-    <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>

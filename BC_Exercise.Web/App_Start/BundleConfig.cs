@@ -21,7 +21,7 @@ namespace BC_Exercise.Web
                       "~/Scripts/respond.js"));
             
             bundles.Add(new ScriptBundle("~/bundles/angular").Include(
-                      "~/Scripts/angular/angular.js").Include(
+                      "~/Scripts/angular/angular.js",
                       "~/Scripts/angular/angular-route.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/app")

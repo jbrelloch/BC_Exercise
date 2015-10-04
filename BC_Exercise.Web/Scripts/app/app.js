@@ -1,27 +1,18 @@
-﻿/*'use strict';
+﻿'use strict';
 
-angular.module('bcExerciseApp', [
+var bcApp = angular.module('bcExerciseApp', [
     'ngRoute', 'bcExerciseApp.controllers',// 'bcExerciseApp.services', 'bcExerciseApp.directives'
-]).config([
-    /*'$routeProvider',
-    function($routeProvider) {
-        //setup routes
-        //$routeProvider.when('/', { templateUrl: '/', reloadOnSearch: false });
+]);
 
-        //$routeProvider.when('/UserPage/User', { templateUrl: '/UserPage/User/Index', reloadOnSearch: false });
-    }#1#
-]).run([]);
+angular.module("bcExerciseApp.controllers", []);
 
-angular.module("bcExerciseApp.controllers", []);*/
-
-var HomeController = function ($scope) {
-    $scope.models = {
-        helloAngular: 'I work!'
-    };
+var configFunction = function ($routeProvider, $locationProvider) {
+    $locationProvider.html5Mode(true);
+    $routeProvider.when('/', { templateUrl: '/', reloadOnSearch: false });
+    $routeProvider.when('/User', { templateUrl: '/User/Index', reloadOnSearch: false });
+    $routeProvider.when('/UserPage', { templateUrl: '/UserPage/User/Index.cshtml', reloadOnSearch: false });
+    $routeProvider.when('/UserPage/User', { templateUrl: 'UserPage/User/Index.cshtml', reloadOnSearch: false });
 }
+configFunction.$inject = ['$routeProvider', '$locationProvider'];
 
-HomeController.$inject = ['$scope'];
-
-var bcExerciseApp = angular.module('bcExerciseApp', []);
-
-bcExerciseApp.controller('HomeController', HomeController);
+bcApp.config(configFunction);

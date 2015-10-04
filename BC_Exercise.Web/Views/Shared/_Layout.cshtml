@@ -20,9 +20,11 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home", new { area = "" }, null)</li>
+                    <li><a href="/#/User">User</a></li>
+                    @*<li>@Html.ActionLink("Home", "Index", "Home", new { area = "" }, null)</li>
                     <li>@Html.ActionLink("Users", "Index", "User", new { area = "UserPage" }, null)</li>
-                    @*<li>@Html.ActionLink("API", "Index", "Help", new { area = "" }, null)</li>*@
+                    <li>@Html.ActionLink("Products", "Index", "User", new { area = "ProductPage" }, null)</li>
+                    <li>@Html.ActionLink("Users", "Index", "User", new { area = "OrderPage" }, null)</li>*@
                 </ul>
             </div>
         </div>
@@ -37,8 +39,6 @@
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
-    @*<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular-route.min.js"></script>*@
     @Scripts.Render("~/bundles/angular")
     @Scripts.Render("~/bundles/app")
     @RenderSection("scripts", required: false)
