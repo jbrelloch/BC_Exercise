@@ -7,11 +7,18 @@ var bcApp = angular.module('bcExerciseApp', [
 angular.module("bcExerciseApp.controllers", []);
 
 var configFunction = function ($routeProvider, $locationProvider) {
-    $locationProvider.html5Mode(true);
-    $routeProvider.when('/', { templateUrl: '/', reloadOnSearch: false });
-    $routeProvider.when('/User', { templateUrl: '/User/Index', reloadOnSearch: false });
-    $routeProvider.when('/UserPage', { templateUrl: '/UserPage/User/Index.cshtml', reloadOnSearch: false });
-    $routeProvider.when('/UserPage/User', { templateUrl: 'UserPage/User/Index.cshtml', reloadOnSearch: false });
+    $routeProvider.when('/', {
+            templateUrl: 'home/welcome'
+        })
+        .when('/home', {
+            templateUrl: 'home/welcome'
+        })
+        .when('/home/index', {
+            templateUrl: 'home/welcome'
+        })
+        .when('/user', {
+            templateUrl: 'user/users'
+        });
 }
 configFunction.$inject = ['$routeProvider', '$locationProvider'];
 

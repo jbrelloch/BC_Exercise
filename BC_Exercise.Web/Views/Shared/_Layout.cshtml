@@ -1,9 +1,9 @@
-﻿<!DOCTYPE html>
-<html ng-app="bcExerciseApp">
+﻿@*<!DOCTYPE html>
+<html>
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title ng-bind="helloAngular">@ViewBag.Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
@@ -20,27 +20,21 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="/#/User">User</a></li>
-                    @*<li>@Html.ActionLink("Home", "Index", "Home", new { area = "" }, null)</li>
-                    <li>@Html.ActionLink("Users", "Index", "User", new { area = "UserPage" }, null)</li>
-                    <li>@Html.ActionLink("Products", "Index", "User", new { area = "ProductPage" }, null)</li>
-                    <li>@Html.ActionLink("Users", "Index", "User", new { area = "OrderPage" }, null)</li>*@
                 </ul>
             </div>
         </div>
     </div>
+
     <div class="container body-content">
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - BC Exercise</p>
+            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
         </footer>
     </div>
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
-    @Scripts.Render("~/bundles/angular")
-    @Scripts.Render("~/bundles/app")
     @RenderSection("scripts", required: false)
 </body>
-</html>
+</html>*@

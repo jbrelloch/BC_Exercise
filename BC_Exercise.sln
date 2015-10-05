@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BC_Exercise.Core", "BC_Exer
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BC_Exercise.Core.Tests", "BC_Exercise.Core.Tests\BC_Exercise.Core.Tests.csproj", "{C3EEC7FD-F0FA-44B1-9FD0-FD46113A07FE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BC_Exercise.Entities", "BC_Exercise.Entities\BC_Exercise.Entities.csproj", "{7FD2CD8B-4D1A-4690-8BC3-01930C410850}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BC_Exercise.Models", "BC_Exercise.Entities\BC_Exercise.Models.csproj", "{7FD2CD8B-4D1A-4690-8BC3-01930C410850}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

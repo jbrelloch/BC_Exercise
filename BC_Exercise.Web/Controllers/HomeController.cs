@@ -10,8 +10,11 @@ namespace BC_Exercise.Web.Controllers
     {
         public ActionResult Index()
         {
-            ViewBag.Title = "Home Page";
+            return View();
+        }
 
+        public ActionResult Welcome()
+        {
             return View();
         }
     }
