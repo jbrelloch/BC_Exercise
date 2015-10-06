@@ -38,11 +38,11 @@
                 error = true;
             }
             if ($scope.user.LastName === null || $scope.user.LastName === "") {
-                $scope.errors.FirstName = "Please enter a last name.";
+                $scope.errors.LastName = "Please enter a last name.";
                 error = true;
             }
             if ($scope.user.Email === null || $scope.user.Email === "") {
-                $scope.errors.FirstName = "Please enter a email.";
+                $scope.errors.LastName = "Please enter a email.";
                 error = true;
             }
             if ($scope.user.StreetAddress === null || $scope.user.StreetAddress === "") {
