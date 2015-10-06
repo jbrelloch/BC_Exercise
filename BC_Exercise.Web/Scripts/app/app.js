@@ -1,10 +1,11 @@
 ﻿'use strict';
 
 var bcApp = angular.module('bcExerciseApp', [
-    'ngRoute', 'bcExerciseApp.controllers',// 'bcExerciseApp.services', 'bcExerciseApp.directives'
+    'ngRoute', 'bcExerciseApp.controllers', 'bcExerciseApp.services'//, 'bcExerciseApp.directives'
 ]);
 
 angular.module("bcExerciseApp.controllers", []);
+angular.module("bcExerciseApp.services", []);
 
 var configFunction = function ($routeProvider, $locationProvider) {
     $routeProvider.when('/', {
@@ -18,7 +19,14 @@ var configFunction = function ($routeProvider, $locationProvider) {
         })
         .when('/user', {
             templateUrl: 'user/users'
+        })
+        .when('/user/add', {
+            templateUrl: 'user/add'
+        })
+        .when('/user/edit/:id', {
+            templateUrl: function (params) { return '/user/edit?id=' + params.id; }
         });
+    
 }
 configFunction.$inject = ['$routeProvider', '$locationProvider'];
 

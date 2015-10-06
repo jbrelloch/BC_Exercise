@@ -4,20 +4,26 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace BC_Exercise.Web.Areas.UserPage.Controllers
+namespace BC_Exercise.Web.Controllers
 {
     public class UserController : Controller
     {
-        // GET: UserPage/User
+        // GET: User/User
         public ActionResult Users()
         {
             return View();
         }
 
-        /*// GET: UserPage/User
+        // GET: User/add
         public ActionResult Add()
         {
             return View();
-        }*/
+        }
+
+        // GET: User/edit/{id}
+        public ActionResult Edit(string id = "")
+        {
+            return View();
+        }
     }
 }

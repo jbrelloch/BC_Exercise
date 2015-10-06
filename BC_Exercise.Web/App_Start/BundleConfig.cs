@@ -26,9 +26,6 @@ namespace BC_Exercise.Web
 
             bundles.Add(new ScriptBundle("~/bundles/app")
                 .IncludeDirectory("~/Scripts/app/", "*.js")
-                .IncludeDirectory("~/Scripts/app/home/", "*.js")
-                .IncludeDirectory("~/Scripts/app/order/", "*.js")
-                .IncludeDirectory("~/Scripts/app/product", "*.js")
                 .IncludeDirectory("~/Scripts/app/user", "*.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(

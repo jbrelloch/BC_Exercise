@@ -19,7 +19,19 @@ namespace BC_Exercise.Web.Tests.Controllers
 
             // Assert
             Assert.IsNotNull(result);
-            Assert.AreEqual("Home Page", result.ViewBag.Title);
+        }
+
+        [TestMethod]
+        public void Welcome()
+        {
+            // Arrange
+            HomeController controller = new HomeController();
+
+            // Act
+            ViewResult result = controller.Welcome() as ViewResult;
+
+            // Assert
+            Assert.IsNotNull(result);
         }
     }
 }
