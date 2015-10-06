@@ -16,6 +16,12 @@ namespace BC_Exercise.Core.Services
             ExternalService = externalService;
         }
 
+        /// <summary>
+        /// Gets the user.
+        /// </summary>
+        /// <param name="ravenSession">The raven session.</param>
+        /// <param name="id">The identifier.</param>
+        /// <returns>The user.</returns>
         public User GetUser(IDocumentSession ravenSession, string id)
         {
             var result = ravenSession.Load<User>(id);
@@ -23,6 +29,11 @@ namespace BC_Exercise.Core.Services
             return result;
         }
 
+        /// <summary>
+        /// Gets all users.
+        /// </summary>
+        /// <param name="ravenSession">The raven session.</param>
+        /// <returns>The users.</returns>
         public List<User> GetAllUsers(IDocumentSession ravenSession)
         {
             var result = ravenSession.Query<User>().Customize(x => x.WaitForNonStaleResults()).ToList();
@@ -30,6 +41,12 @@ namespace BC_Exercise.Core.Services
             return result;
         }
 
+        /// <summary>
+        /// Adds the user.
+        /// </summary>
+        /// <param name="ravenSession">The raven session.</param>
+        /// <param name="model">The model.</param>
+        /// <returns>The identifier of the added user.</returns>
         public string AddUser(IDocumentSession ravenSession, User model)
         {
             if (!String.IsNullOrEmpty(model.StreetAddress)
@@ -47,6 +64,12 @@ namespace BC_Exercise.Core.Services
             return model.Id;
         }
 
+        /// <summary>
+        /// Updates the user.
+        /// </summary>
+        /// <param name="ravenSession">The raven session.</param>
+        /// <param name="model">The model.</param>
+        /// <returns>The updated user.</returns>
         public User UpdateUser(IDocumentSession ravenSession, User model)
         {
             var currentDbModel = ravenSession.Load<User>(model.Id);
@@ -79,6 +102,12 @@ namespace BC_Exercise.Core.Services
             return currentDbModel;
         }
 
+        /// <summary>
+        /// Deletes the user.
+        /// </summary>
+        /// <param name="ravenSession">The raven session.</param>
+        /// <param name="id">The identifier.</param>
+        /// <returns>The identifier of the deleted user.</returns>
         public string DeleteUser(IDocumentSession ravenSession, string id)
         {
             var currentDbModel = ravenSession.Load<User>(id);

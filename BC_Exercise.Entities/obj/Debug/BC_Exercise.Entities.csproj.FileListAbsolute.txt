@@ -1,0 +1,5 @@
+C:\Users\Jason\Documents\Github\BC_Exercise\BC_Exercise.Entities\bin\Debug\BC_Exercise.Entities.dll
+C:\Users\Jason\Documents\Github\BC_Exercise\BC_Exercise.Entities\bin\Debug\BC_Exercise.Entities.pdb
+C:\Users\Jason\Documents\Github\BC_Exercise\BC_Exercise.Entities\obj\Debug\BC_Exercise.Entities.csprojResolveAssemblyReference.cache
+C:\Users\Jason\Documents\Github\BC_Exercise\BC_Exercise.Entities\obj\Debug\BC_Exercise.Entities.dll
+C:\Users\Jason\Documents\Github\BC_Exercise\BC_Exercise.Entities\obj\Debug\BC_Exercise.Entities.pdb
